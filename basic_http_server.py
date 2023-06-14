@@ -5,10 +5,11 @@ import webbrowser
 import urllib.parse
 import requests
 import json
+import os
 
 PORT = 8080
-CLIENT_ID = '94e7c973ecaeb3068218'
-CLIENT_SECRET = '279a8158f650e7b980b3bb2df11fe5fceb1061da'
+CLIENT_ID = os.environ.get('CLIENT_ID')
+CLIENT_SECRET = os.environ.get('CLIENT_SECRET')
 access_token = None
 
 class CustomHandler(http.server.SimpleHTTPRequestHandler):
