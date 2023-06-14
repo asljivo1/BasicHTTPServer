@@ -1,6 +1,6 @@
 # Basic HTTP Server
 
-This HTTP server supports authorizes users via GitHub OAuth App. 
+This HTTP server authorizes users via GitHub OAuth App. 
 
 ## Requirements
 
