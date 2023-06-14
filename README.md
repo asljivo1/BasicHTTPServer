@@ -1,10 +1,7 @@
 # Basic HTTP Server
 
-This HTTP server supports basic authentication only, and not OAuth2. User that has access to `/token` endpoint is:
-```
-username: amina
-password: mysecret
-```
+This HTTP server supports authorizes users via GitHub OAuth App. 
+
 ## Requirements
 
 - python3
@@ -24,4 +21,4 @@ cd BasicHTTPServer
 python3 basic_http_server.py
 ```
 4. In a web browser, navigate to http://localhost:8080/token
-5. You will be asked to enter user credentials. Enter the credentials listed above.
+5. You will be redirected to GitHub where you should log in with your credentials, and you will get authenticated.
